@@ -5,6 +5,7 @@ config const nLevels = 3;
 
 proc main() {
     // read sample data
+    //  (data pulled from: http://paulbourke.net/dataformats/holter/)
     const ecgSamples = try! readEcgData("ecg_samples.txt"),
           lenP2 = 2**(floor(log2(ecgSamples.size)):int);
 
